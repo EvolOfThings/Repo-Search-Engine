@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/EvolOfThings/Repo-Search-Engine/issues"
   },
-  "homepage": "https://github.com/EvolOfThings/Repo-Search-Engine#readme"
+  "homepage": "https://github.com/EvolOfThings/Repo-Search-Engine#readme",
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  }
 }
