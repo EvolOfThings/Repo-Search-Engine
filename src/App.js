@@ -13,4 +13,18 @@ class App extends Component {
   }
 }
 
+class RepoSearchBar extends Component {
+  render() {
+    const repoName = this.props.repoName;
+    return (
+      <form>
+        <input type="text" placeholder="Repository name"/>
+      </form>
+      );
+  }
+}
+
+
+
+
 export default App;
