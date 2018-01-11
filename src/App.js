@@ -8,21 +8,25 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">GitHub Repo Search</h1>
         </header>
+        <form>
+          <input type="text" placeholder="Repository name"/>
+        </form>
       </div>
     );
   }
 }
 
-class RepoSearchBar extends Component {
-  render() {
-    const repoName = this.props.repoName;
-    return (
-      <form>
-        <input type="text" placeholder="Repository name"/>
-      </form>
-      );
-  }
-}
+// class RepoSearchBar extends Component {
+//   render() {
+//     return (
+//         <div>
+//           <form>
+//             <input type="text" placeholder="Repository name"/>
+//           </form>
+//       </div>
+//       );
+//   }
+// }
 
 
 
