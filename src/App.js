@@ -8,9 +8,14 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">GitHub Repo Search</h1>
         </header>
-        <form>
-          <input type="text" placeholder="Repository name"/>
-        </form>
+        <div className="SearchBar">
+            <form>
+              <input className="Repo-Bar" type="text" placeholder="Repository name"/>
+            </form>
+            <form>
+              <input className="Username-Bar" type="text" placeholder="username"/>
+            </form>
+        </div>
       </div>
     );
   }
