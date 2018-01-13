@@ -10,10 +10,10 @@ class App extends Component {
         </header>
         <div className="SearchBar">
             <form>
-              <input className="Repo-Bar" type="text" placeholder="Repository name"/>
+              <input className="RepoBar" type="text" placeholder="Repository name"/>
             </form>
             <form>
-              <input className="Username-Bar" type="text" placeholder="username"/>
+              <input className="UsernameBar" type="text" placeholder="username"/>
             </form>
         </div>
       </div>

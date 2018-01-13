@@ -29,3 +29,8 @@
 .SearchBar {
   margin-top: 50px;
 }
+
+.RepoBar, .UsernameBar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
