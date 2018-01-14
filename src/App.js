@@ -2,6 +2,27 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
+    constructor(){
+        super();
+        this.state = {
+            repoTxt: {value: ''},
+            usernameTxt: {value: ''}
+        }
+    }
+    handleChangeRepo(e){
+        this.setState({
+            repoTxt: e.target.value,
+        })
+    }
+    handleChangeUser(e){
+        this.setState({
+            usernameTxt: e.target.value
+        })
+    }
+    handleSubmit(e){
+        e.preventDefault();
+        console.log(this.state)
+    }
   render() {
     return (
       <div className="App">
@@ -9,17 +30,34 @@ class App extends Component {
           <h1 className="App-title">GitHub Repo Search</h1>
         </header>
         <div className="SearchBar">
-            <form>
-              <input className="RepoBar" type="text" placeholder="Repository name"/>
-            </form>
-            <form>
-              <input className="UsernameBar" type="text" placeholder="username"/>
+            <form onSubmit={this.handleSubmit.bind(this)}>
+            <label> Name of a repository:
+              <input name="repository" className="RepoBar" type="text" placeholder="Repository name" value={this.state.usernameTxt} onChange={this.handleChangeRepo.bind(this)}/>
+              </label><br/>
+            <label> Username:
+              <input name="username" className="UsernameBar" type="text" placeholder="username" value={this.state.repoTxt} onChange={this.handleChangeUser.bind(this)}/>
+              </label>
+              <input className="btn btn-primary" type="submit" value="Submit"/>
+              <h2> Repository: {this.state.repoTxt} Username: {this.state.usernameTxt}</h2>
             </form>
         </div>
       </div>
     );
   }
 }
+
+App.propTypes = {
+
+}
+
+// class ResultBox extends Component {
+//     render() {
+//         return (
+//             <h2> Results:</h2>
+//         );
+//     }
+// }
+
 
 // class RepoSearchBar extends Component {
 //   render() {
