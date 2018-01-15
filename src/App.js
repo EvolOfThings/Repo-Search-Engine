@@ -5,18 +5,18 @@ class App extends Component {
     constructor(){
         super();
         this.state = {
-            repoTxt: {value: ''},
-            usernameTxt: {value: ''}
+            repoTxt: '',
+            usernameTxt: ''
         }
     }
     handleChangeRepo(e){
         this.setState({
-            repoTxt: e.target.value,
+            repoTxt: e.target.value
         })
     }
-    handleChangeUser(e){
+    handleChangeUser(eve){
         this.setState({
-            usernameTxt: e.target.value
+            usernameTxt: eve.target.value
         })
     }
     handleSubmit(e){
@@ -32,13 +32,13 @@ class App extends Component {
         <div className="SearchBar">
             <form onSubmit={this.handleSubmit.bind(this)}>
             <label> Name of a repository:
-              <input name="repository" className="RepoBar" type="text" placeholder="Repository name" value={this.state.usernameTxt} onChange={this.handleChangeRepo.bind(this)}/>
+              <input name="repository" className="RepoBar" type="text" placeholder="Repository name"  onChange={this.handleChangeRepo.bind(this)}/>
               </label><br/>
-            <label> Username:
-              <input name="username" className="UsernameBar" type="text" placeholder="username" value={this.state.repoTxt} onChange={this.handleChangeUser.bind(this)}/>
-              </label>
+              <label> Username:
+                <input name="username" className="UsernameBar" type="text" placeholder="Repository name"  onChange={this.handleChangeUser.bind(this)}/>
+                </label>
               <input className="btn btn-primary" type="submit" value="Submit"/>
-              <h2> Repository: {this.state.repoTxt} Username: {this.state.usernameTxt}</h2>
+              <h2> Repository: {this.state.repoTxt} Username: {this.state.usernameTxt} </h2>
             </form>
         </div>
       </div>
