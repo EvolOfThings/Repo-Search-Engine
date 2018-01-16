@@ -1,3 +1,7 @@
+body {
+  background-color: #D4D4D4;
+}
+
 .App {
   text-align: center;
 }
@@ -33,4 +37,9 @@
 .RepoBar, .UsernameBar {
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.btn-primary {
+  margin: 5px;
 }

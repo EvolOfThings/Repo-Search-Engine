@@ -8,22 +8,27 @@ class App extends Component {
             repoTxt: '',
             usernameTxt: ''
         }
+        this.handleChange = this.handleChange.bind(this)
     }
-    handleChangeRepo(e){
+//the search bar value is updated
+    handleChange(){
         this.setState({
-            repoTxt: e.target.value
-        })
-    }
-    handleChangeUser(eve){
-        this.setState({
-            usernameTxt: eve.target.value
+            repoTxt: this.refs.repository.value,
+            usernameTxt: this.refs.username.value
         })
     }
     handleSubmit(e){
         e.preventDefault();
         console.log(this.state)
     }
+    componentWillMount(){
+        console.log('componentWillMount')
+    }
+    componentDidMount(){
+        console.log('componentDidMount')
+    }
   render() {
+    console.log('rendered');
     return (
       <div className="App">
         <header className="App-header">
@@ -32,13 +37,14 @@ class App extends Component {
         <div className="SearchBar">
             <form onSubmit={this.handleSubmit.bind(this)}>
             <label> Name of a repository:
-              <input name="repository" className="RepoBar" type="text" placeholder="Repository name"  onChange={this.handleChangeRepo.bind(this)}/>
+              <input ref="repository" className="RepoBar" type="text" placeholder="Repository name"  onChange={this.handleChange}/>
               </label><br/>
               <label> Username:
-                <input name="username" className="UsernameBar" type="text" placeholder="Repository name"  onChange={this.handleChangeUser.bind(this)}/>
+                <input ref="username" className="UsernameBar" type="text" placeholder="username"  onChange={this.handleChange}/>
                 </label>
               <input className="btn btn-primary" type="submit" value="Submit"/>
-              <h2> Repository: {this.state.repoTxt} Username: {this.state.usernameTxt} </h2>
+              <hr />
+              <h2> Repository: {this.state.repoTxt} <br/> Username: {this.state.usernameTxt} </h2>
             </form>
         </div>
       </div>
@@ -46,15 +52,23 @@ class App extends Component {
   }
 }
 
-App.propTypes = {
-
-}
-
-// class ResultBox extends Component {
-//     render() {
+// class RepoResult extends Component {
+//     render(){
 //         return (
-//             <h2> Results:</h2>
-//         );
+//             <div>
+//                 <h2> Repository: {this.state.repoTxt}</h2>
+//             </div>
+//         )
+//     }
+// }
+
+// class UsernameResult extends Component {
+//     render(){
+//         return (
+//             <div>
+//                 <h2>Username: {this.state.usernameTxt} </h2>
+//             </div>
+//         )
 //     }
 // }
 
