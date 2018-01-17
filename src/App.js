@@ -6,7 +6,8 @@ class App extends Component {
         super();
         this.state = {
             repoTxt: '',
-            usernameTxt: ''
+            usernameTxt: '',
+            items: []
         }
         this.handleChange = this.handleChange.bind(this)
     }
@@ -22,13 +23,16 @@ class App extends Component {
         console.log(this.state)
     }
     componentWillMount(){
-        console.log('componentWillMount')
+        fetch('https://swapi.co/api/people/?format=json')
+        .then( response => response.json() )
+        .then( ({results: items}) => this.setState({items}))
     }
     componentDidMount(){
         console.log('componentDidMount')
     }
   render() {
     console.log('rendered');
+    let items = this.state.items
     return (
       <div className="App">
         <header className="App-header">
@@ -45,6 +49,10 @@ class App extends Component {
               <input className="btn btn-primary" type="submit" value="Submit"/>
               <hr />
               <h2> Repository: {this.state.repoTxt} <br/> Username: {this.state.usernameTxt} </h2>
+              <div>
+              {items.map(item =>
+                <Person key={item.name} person={item} />)}
+              </div>
             </form>
         </div>
       </div>
@@ -52,11 +60,19 @@ class App extends Component {
   }
 }
 
+const Person = (props) => <h4>{props.person.name}</h4>
+
 // class RepoResult extends Component {
+//     mount(){
+//         ReactDOM.render(<App />, document.getElementById('results'))
+//     }
 //     render(){
 //         return (
 //             <div>
-//                 <h2> Repository: {this.state.repoTxt}</h2>
+//             <label> Name of a repository:
+//             <input type="text" onChange={this.mount.bind(this)}/>
+//             </label>
+//                 <div id="results"></div>
 //             </div>
 //         )
 //     }
