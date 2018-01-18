@@ -32,7 +32,7 @@ class App extends Component {
     }
   render() {
     console.log('rendered');
-    let items = this.state.items
+    let items = this.state.items;
     return (
       <div className="App">
         <header className="App-header">
