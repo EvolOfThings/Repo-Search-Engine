@@ -32,7 +32,6 @@ class App extends Component {
     }
   render() {
     console.log('rendered');
-    let items = this.state.items;
     return (
       <div className="App">
         <header className="App-header">
@@ -49,10 +48,6 @@ class App extends Component {
               <input className="btn btn-primary" type="submit" value="Submit"/>
               <hr />
               <h2> Repository: {this.state.repoTxt} <br/> Username: {this.state.usernameTxt} </h2>
-              <div>
-              {items.map(item =>
-                <Person key={item.name} person={item} />)}
-              </div>
             </form>
         </div>
       </div>
@@ -60,7 +55,6 @@ class App extends Component {
   }
 }
 
-const Person = (props) => <h4>{props.person.name}</h4>
 
 // class RepoResult extends Component {
 //     mount(){
