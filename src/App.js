@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+const title = 'GitHub Repo Search';
+
 class App extends Component {
     constructor(){
         super();
@@ -35,7 +37,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">GitHub Repo Search</h1>
+          <h1 className="App-title">{title}</h1>
         </header>
         <div className="SearchBar">
             <form onSubmit={this.handleSubmit.bind(this)}>
@@ -54,6 +56,7 @@ class App extends Component {
     );
   }
 }
+
 
 
 
