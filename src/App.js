@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 
-const title = 'GitHub Repo Search';
 
 class App extends Component {
     constructor(){
@@ -36,9 +35,7 @@ class App extends Component {
     console.log('rendered');
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">{title}</h1>
-        </header>
+        <AppTitle text='GitHub Repo Search'/>
         <div className="SearchBar">
             <form onSubmit={this.handleSubmit.bind(this)}>
             <label> Name of a repository:
@@ -60,15 +57,18 @@ class App extends Component {
 
 
 
-// class UsernameResult extends Component {
-//     render(){
-//         return (
-//             <div>
-//                 <h2>Username: {this.state.usernameTxt} </h2>
-//             </div>
-//         )
-//     }
-// }
+class AppTitle extends Component {
+    render(){
+      const {text} = this.props;
+        return (
+            <div>
+              <header className="App-header">
+                <h1 className="App-title">{text}</h1>
+              </header>
+            </div>
+        )
+    }
+}
 
 
 // class RepoSearchBar extends Component {
