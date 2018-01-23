@@ -71,21 +71,6 @@ class AppTitle extends Component {
 }
 
 
-// class RepoSearchBar extends Component {
-//   render() {
-//     return (
-//         <div>
-//           <form>
-//             <input type="text" placeholder="Repository name"/>
-//           </form>
-//       </div>
-//       );
-//   }
-// }
-
-
-
-
 export default App;
 
 
