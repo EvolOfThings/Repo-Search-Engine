@@ -35,7 +35,7 @@ class App extends Component {
     console.log('rendered');
     return (
       <div className="App">
-        <AppTitle text='GitHub Repo Search'/>
+        <AppTitle text='GitHub Rpo Search'/>
         <div className="SearchBar">
             <form onSubmit={this.handleSubmit.bind(this)}>
             <label> Name of a repository:
@@ -53,7 +53,6 @@ class App extends Component {
     );
   }
 }
-
 
 
 
