@@ -35,7 +35,7 @@ class App extends Component {
     console.log('rendered');
     return (
       <div className="App">
-        <AppTitle text='GitHub Rpo Search'/>
+        <AppTitle text='GitHub Repo Search'/>
         <div className="SearchBar">
             <form onSubmit={this.handleSubmit.bind(this)}>
             <label> Name of a repository:
