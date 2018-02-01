@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import UserSearch from './UserSearch';
 
 
 class App extends Component {
@@ -44,12 +45,12 @@ class App extends Component {
               <hr />
               <h2> Repository: {this.state.repoTxt} <br/> Username: {this.state.usernameTxt} </h2>
             </form>
+            <UserSearch />
         </div>
       </div>
     );
   }
 }
-
 
 
 class AppTitle extends Component {
