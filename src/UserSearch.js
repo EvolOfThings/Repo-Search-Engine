@@ -6,14 +6,14 @@ class UserSearch extends Component {
     render() {
         return (
             <div>
-                <div className='profilePic'>
-                    <img src='#' />
+                <div className='profileImage'>
+                    <img className='profilePic' src='#' />
                 </div>
                 <div className='repos'>
                     <ul>
-                    <li>repo A </li>
-                    <li>repo B </li>
-                    <li>repo C </li>
+                    <li className='repoItem'>repo A </li>
+                    <li className='repoItem'>repo B </li>
+                    <li className='repoItem'>repo C </li>
                     </ul>
                 </div>
             </div>
