@@ -1,5 +1,5 @@
 body {
-  background-color: #D4D4D4;
+  background-color: #888888;
 }
 
 .App {
@@ -17,7 +17,8 @@ body {
 }
 
 .SearchBar {
-  margin-top: 50px;
+  padding-top: 50px;
+  background-color: #60646D;
 }
 
 .RepoBar, .UsernameBar {
@@ -29,6 +30,8 @@ body {
 .btn-primary {
   margin: 5px;
 }
+
+
 
 ul li {
   list-style-type: none;

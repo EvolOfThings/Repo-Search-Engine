@@ -37,15 +37,17 @@ class App extends Component {
             <form onSubmit={this.handleSubmit.bind(this)}>
             <label> Name of a repository:
               <input ref="repository" className="RepoBar" type="text" placeholder="Repository name"  onChange={this.handleChange}/>
-              </label><br/>
-              <label> Username:
-                <input ref="username" className="UsernameBar" type="text" placeholder="username"  onChange={this.handleChange}/>
-                </label>
+            </label><br/>
+            <p>or</p>
+            <label> Username:
+              <input ref="username" className="UsernameBar" type="text" placeholder="username"  onChange={this.handleChange}/>
+            </label><br/>
               <input className="btn btn-primary" type="submit" value="Submit"/>
-              <hr />
-              <h2> Repository: {this.state.repoTxt} <br/> Username: {this.state.usernameTxt} </h2>
             </form>
-            <UserSearch />
+        </div>
+        <div className='Results'>
+          <h2> Repository: {this.state.repoTxt} <br/> Username: {this.state.usernameTxt} </h2>
+          <UserSearch />
         </div>
       </div>
     );
