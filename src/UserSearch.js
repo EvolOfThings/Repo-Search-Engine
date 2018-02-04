@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
 
 
+let Repository = (
+    <div className='repos'>
+        <ul>
+        <li className='repoItem'>repo A </li>
+        <li className='repoItem'>repo B </li>
+        <li className='repoItem'>repo C </li>
+        </ul>
+    </div>
+    );
 
 class UserSearch extends Component {
     render() {
