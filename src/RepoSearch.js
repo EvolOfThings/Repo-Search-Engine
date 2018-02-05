@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 
-let Profile = (
+let Profile = () {
+    return (
     <div id="RepoResult">
         <div className='profilePic'>
             <img src='#' />
@@ -15,7 +16,7 @@ let Profile = (
             </label>
         </div>
     </div>
-    );
+    )};
 
 class RepoSearch extends Component {
     mount(){
