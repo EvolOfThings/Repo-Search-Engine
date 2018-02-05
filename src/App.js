@@ -3,6 +3,22 @@ import './App.css';
 import UserSearch from './UserSearch';
 
 
+// const searchBar = () {
+//  return (
+//   <div className="SearchBar">
+//       <form onSubmit={this.handleSubmit.bind(this)}>
+//       <label> Name of a repository:
+//         <input ref="repository" className="RepoBar" type="text" placeholder="Repository name"  onChange={this.handleChange}/>
+//       </label><br/>
+//       <p>or</p>
+//       <label> Username:
+//         <input ref="username" className="UsernameBar" type="text" placeholder="username"  onChange={this.handleChange}/>
+//       </label><br/>
+//         <input className="btn btn-primary" type="submit" value="Submit"/>
+//       </form>
+//   </div>
+//   )};
+
 class App extends Component {
     constructor(){
         super();

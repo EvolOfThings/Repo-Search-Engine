@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 
-let Repository = (
+let Repository = () => {
+    return (
     <div className='repos'>
         <ul>
         <li className='repoItem'>repo A </li>
@@ -9,7 +10,7 @@ let Repository = (
         <li className='repoItem'>repo C </li>
         </ul>
     </div>
-    );
+    )};
 
 class UserSearch extends Component {
     render() {
@@ -18,12 +19,8 @@ class UserSearch extends Component {
                 <div className='profileImage'>
                     <img className='profilePic' src='#' />
                 </div>
-                <div className='repos'>
-                    <ul>
-                    <li className='repoItem'>repo A </li>
-                    <li className='repoItem'>repo B </li>
-                    <li className='repoItem'>repo C </li>
-                    </ul>
+                <div>
+                    <Repository />
                 </div>
             </div>
             );
