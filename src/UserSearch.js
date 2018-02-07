@@ -15,7 +15,7 @@ let Repository = () => {
 class UserSearch extends Component {
     render() {
         return (
-            <div>
+            <div className='profile'>
                 <div className='profileImage'>
                     <img className='profilePic' src='#' />
                 </div>
