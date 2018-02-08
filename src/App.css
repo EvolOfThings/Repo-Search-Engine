@@ -39,6 +39,7 @@ body {
 .repos {
   border: 1px solid black;
   margin: 5px;
+  background-color: #7BB0A6;
 }
 
 ul li {
