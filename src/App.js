@@ -39,11 +39,6 @@ class App extends Component {
         e.preventDefault();
         console.log(this.state)
     }
-    componentWillMount(){
-    }
-    componentDidMount(){
-        console.log('componentDidMount')
-    }
   render() {
     console.log('rendered');
     return (
