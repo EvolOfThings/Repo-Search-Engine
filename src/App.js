@@ -35,25 +35,20 @@ class App extends Component {
             usernameTxt: this.refs.username.value
         })
     }
-    handleSubmit(e){
-        e.preventDefault();
-        console.log(this.state)
-    }
   render() {
     console.log('rendered');
     return (
       <div className="App">
         <AppTitle text='GitHub Repo Search'/>
         <div className="SearchBar">
-            <form onSubmit={this.handleSubmit.bind(this)}>
+            <form>
             <label> Name of a repository:
               <input ref="repository" className="RepoBar" type="text" placeholder="Repository name"  onChange={this.handleChange}/>
             </label><br/>
             <p>or</p>
             <label> Username:
               <input ref="username" className="UsernameBar" type="text" placeholder="username"  onChange={this.handleChange}/>
-            </label><br/>
-              <input className="btn btn-primary" type="submit" value="Submit"/>
+            </label>
             </form>
         </div>
         <div className='Results'>
