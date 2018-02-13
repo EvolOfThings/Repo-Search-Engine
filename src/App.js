@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import UserSearch from './UserSearch';
-
+import {Grid, Row, Col} from 'react-bootstrap';
 
 // const searchBar = () {
 //  return (
@@ -41,15 +41,20 @@ class App extends Component {
       <div className="App">
         <AppTitle text='GitHub Repo Search'/>
         <div className="SearchBar">
-            <form>
-            <label> Name of a repository:
-              <input ref="repository" className="RepoBar" type="text" placeholder="Repository name"  onChange={this.handleChange}/>
-            </label><br/>
-            <p>or</p>
-            <label> Username:
-              <input ref="username" className="UsernameBar" type="text" placeholder="username"  onChange={this.handleChange}/>
-            </label>
-            </form>
+        <Grid fluid='true'>
+            <Row>
+              <Col md={6} >
+                <label> Name of a repository:
+                  <input ref="repository" className="RepoBar" type="text" placeholder="Repository name"  onChange={this.handleChange}/>
+                </label>
+              </Col>
+              <Col md={6} >
+                <label> Username:
+                  <input ref="username" className="UsernameBar" type="text" placeholder="username"  onChange={this.handleChange}/>
+                </label>
+              </Col>
+            </Row>
+          </Grid>
         </div>
         <div className='Results'>
           <h2> Repository: {this.state.repoTxt} <br/> Username: {this.state.usernameTxt} </h2>
@@ -59,6 +64,9 @@ class App extends Component {
     );
   }
 }
+
+
+
 
 
 class AppTitle extends Component {
