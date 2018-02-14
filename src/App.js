@@ -41,6 +41,7 @@ class App extends Component {
       <div className="App">
         <AppTitle text='GitHub Repo Search'/>
         <div className="SearchBar">
+        <p className='SearchTitle'> Search by <em>username</em> or <em>repository name</em> </p>
         <Grid fluid='true'>
             <Row>
               <Col md={6} >
@@ -58,6 +59,7 @@ class App extends Component {
         </div>
         <div className='Results'>
           <h2> Repository: {this.state.repoTxt} <br/> Username: {this.state.usernameTxt} </h2>
+          <UserSearch />
           <UserSearch />
         </div>
       </div>
