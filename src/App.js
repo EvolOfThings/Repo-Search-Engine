@@ -39,7 +39,11 @@ class App extends Component {
     console.log('rendered');
     return (
       <div className="App">
-        <AppTitle text='GitHub Repo Search'/>
+        <div>
+          <header className="App-header">
+            <h1 className="App-title">GitHub Repo Search</h1>
+          </header>
+        </div>
         <div className="SearchBar">
         <p className='SearchTitle'> Search by <em>username</em> or <em>repository name</em> </p>
         <Grid fluid='true'>
@@ -67,22 +71,6 @@ class App extends Component {
   }
 }
 
-
-
-
-
-class AppTitle extends Component {
-    render(){
-      const {text} = this.props;
-        return (
-            <div>
-              <header className="App-header">
-                <h1 className="App-title">{text}</h1>
-              </header>
-            </div>
-        )
-    }
-}
 
 
 export default App;
