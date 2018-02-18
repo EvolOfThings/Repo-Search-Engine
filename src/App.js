@@ -35,6 +35,11 @@ class App extends Component {
             usernameTxt: this.refs.username.value
         })
     }
+    checkUserValue(){
+      this.setState({
+        usernameTxt: this.refs.username.value
+      })
+    }
   render() {
     console.log('rendered');
     return (
@@ -61,8 +66,20 @@ class App extends Component {
             </Row>
           </Grid>
         </div>
+
         <div className='Results'>
-          <h2> Repository: {this.state.repoTxt} <br/> Username: {this.state.usernameTxt} </h2>
+          {
+            <div>
+              <h2> Repository: {this.state.repoTxt} </h2>
+            </div>
+          }
+          <div>
+            {
+              <div>
+                <h2> Username: {this.state.usernameTxt} </h2>
+              </div>
+            }
+        </div>
           <UserSearch />
           <UserSearch />
         </div>
