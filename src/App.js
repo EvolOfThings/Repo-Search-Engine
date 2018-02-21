@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import UserSearch from './UserSearch';
 import {Grid, Row, Col} from 'react-bootstrap';
+import Radium from 'radium';
 
 // const searchBar = () {
 //  return (
@@ -34,11 +35,6 @@ class App extends Component {
             repoTxt: this.refs.repository.value,
             usernameTxt: this.refs.username.value
         })
-    }
-    checkUserValue(){
-      this.setState({
-        usernameTxt: this.refs.username.value
-      })
     }
   render() {
     console.log('rendered');
@@ -90,6 +86,10 @@ class App extends Component {
 
 
 
-export default App;
+export default Radium(App);
 
-
+    // checkUserValue(){
+    //   this.setState({
+    //     usernameTxt: this.refs.username.value
+    //   })
+    // }
