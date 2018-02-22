@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import UserSearch from './UserSearch';
+import UserSearch from '.User/UserSearch';
 import {Grid, Row, Col} from 'react-bootstrap';
 import Radium from 'radium';
 
