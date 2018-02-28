@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import UserSearch from '../User/UserSearch';
+import Repository from '../User/UserSearch';
+import Profile from '../Repo/RepoSearch';
 import {Grid, Row, Col} from 'react-bootstrap';
 import Radium from 'radium';
 
@@ -47,14 +48,14 @@ class App extends Component {
         </div>
         <div className="SearchBar">
         <p className='SearchTitle'> Search by <em>username</em> or <em>repository name</em> </p>
-        <Grid fluid='true'>
+        <Grid fluid={true}>
             <Row>
               <Col md={6} >
                 <label> Name of a repository:
                   <input ref="repository" className="RepoBar" type="text" placeholder="Repository name"  onChange={this.handleChange}/>
                 </label>
               </Col>
-              <Col md={6} >
+              <Col md={6}>
                 <label> Username:
                   <input ref="username" className="UsernameBar" type="text" placeholder="username"  onChange={this.handleChange}/>
                 </label>
@@ -76,8 +77,9 @@ class App extends Component {
               </div>
             }
         </div>
-          <UserSearch />
-          <UserSearch />
+          <Repository />
+          <Repository />
+          <Profile />
         </div>
       </div>
     );
