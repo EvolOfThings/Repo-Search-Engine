@@ -3,7 +3,6 @@ import './App.css';
 import Repository from '../User/UserSearch';
 import Profile from '../Repo/RepoSearch';
 import {Grid, Row, Col} from 'react-bootstrap';
-import Radium from 'radium';
 
 // const searchBar = () {
 //  return (
@@ -88,7 +87,7 @@ class App extends Component {
 
 
 
-export default Radium(App);
+export default App;
 
     // checkUserValue(){
     //   this.setState({
