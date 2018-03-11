@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Repository from '../User/UserSearch';
-import Profile from '../Repo/RepoSearch';
+import Repository from '../components/User/UserSearch';
+import Profile from '../components/Repo/RepoSearch';
 import {Grid, Row, Col} from 'react-bootstrap';
 
 // const searchBar = () {
