@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
-//import Repository from '../components/User/UserSearch';
-//import Profile from '../components/Repo/RepoSearch';
+import { BrowserRouter } from 'react-router-dom';
+import Home from './Home/Home';
+
 import {Grid, Row, Col} from 'react-bootstrap';
 
+import './App.css';
 
 
 class App extends Component {
@@ -12,9 +13,11 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Home />
+        </div>
+      </BrowserRouter>
     );
   }
 }
