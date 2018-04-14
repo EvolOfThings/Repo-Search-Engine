@@ -4,7 +4,14 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <h2>Git Repo Search</h2>    
+                <h2>Git Repo Search</h2>
+                <div>
+                    <label> Username </label>
+                    <input type='text' />
+                    <label>Repository</label>
+                    <input type='text' />
+                    {/* <button>Search</button> */}
+                </div>
              </div>
         );
     }
