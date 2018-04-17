@@ -4,7 +4,7 @@ import Home from './Home/Home';
 
 import {Grid, Row, Col} from 'react-bootstrap';
 
-import './App.css';
+import classes from './App.css';
 
 
 class App extends Component {
@@ -14,7 +14,8 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="App">
+        <div>
+          <h2 className={classes.AppTitle}>Git Repo Search</h2> 
           <Home />
         </div>
       </BrowserRouter>
