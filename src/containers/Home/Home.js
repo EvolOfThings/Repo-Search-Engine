@@ -1,11 +1,16 @@
 import React, {Component} from 'react';
 
+import Profile from '../../components/Profile/Profile';
 import classes from './Home.css';
 
 class Home extends Component {
     state = {
         user: {}
     }
+getUser = () => {
+    const name = this.state 
+}
+
     render() {
         const { user } = this.state;
         return (
@@ -15,6 +20,7 @@ class Home extends Component {
                     <label>Repository :</label>
                     <input className={classes.Input} type='text' />
                     {/* <button>Search</button> */}
+                    <Profile />
                 </div>
         );
     }
