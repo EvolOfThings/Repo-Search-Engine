@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 import Profile from '../../components/Profile/Profile';
+import Repo from '../../components/Repo/Repo';
 import classes from './Home.css';
 
 class Home extends Component {
@@ -21,6 +22,7 @@ getUser = () => {
                     <input className={classes.Input} type='text' />
                     {/* <button>Search</button> */}
                     <Profile />
+                    <Repo />
                 </div>
         );
     }
