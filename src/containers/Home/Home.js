@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import Profile from '../../components/Profile/Profile';
 import Repo from '../../components/Repo/Repo';
+import Modal from '../Modal/Modal';
 import classes from './Home.css';
 
 class Home extends Component {
@@ -23,6 +24,7 @@ getUser = () => {
                     {/* <button>Search</button> */}
                     <Profile />
                     <Repo />
+                    {/* <Modal /> */}
                 </div>
         );
     }
