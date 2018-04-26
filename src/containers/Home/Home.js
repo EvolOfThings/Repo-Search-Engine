@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Profile from '../../components/Profile/Profile';
 import Repo from '../../components/Repo/Repo';
 import Modal from '../Modal/Modal';
+import Backdrop from '../../components/UI/Backdrop/Backdrop'
 import classes from './Home.css';
 
 class Home extends Component {
@@ -25,6 +26,7 @@ getUser = () => {
                     <Profile />
                     <Repo />
                     {/* <Modal /> */}
+                    {/* <Backdrop /> */}
                 </div>
         );
     }
