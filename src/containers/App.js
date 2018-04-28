@@ -17,6 +17,7 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <h2 className={classes.AppTitle}>Github Repo Finder</h2> 
+          <p>Prajj. You've got this! The job is yours!!</p>
           <Home />
         </div>
       </BrowserRouter>
