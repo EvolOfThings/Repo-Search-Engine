@@ -8,7 +8,8 @@ import classes from './Home.css';
 
 class Home extends Component {
     state = {
-        user: {}
+        username: '',
+        repo: ''
     }
 getUser = () => {
     const name = this.state 
@@ -19,9 +20,9 @@ getUser = () => {
         return (
                 <div>
                     <label> Username : </label>
-                    <input className={classes.Input} type='text' onClick={this.getUser}/>
-                    <label>Repository :</label>
                     <input className={classes.Input} type='text' />
+                    <label>Repository :</label>
+                    <input className={classes.Input} type='text' onChange={(event) => this.setState({username: event.target.value})}/>
                     {/* <button>Search</button> */}
                     <Profile />
                     <Repo />
