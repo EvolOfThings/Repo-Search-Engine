@@ -3,14 +3,14 @@ import React from 'react';
 import classes from './Repo.css';
 
 
-const repo = () => (
+const repo = (props) => (
     <div>
         <h4 style={{textAlign: 'center'}}>Repository</h4>
         <div className={classes.Profile}>
-            <img className={classes.ProfileImage} src="#" alt="user profile image"/>
+            <img className={classes.ProfileImage} src={props.ProfileImage} alt="user profile image"/>
             <section>
-            <p>Username: </p>
-            <p>Repository link:</p>
+            <p>Username: {props.username} </p>
+            <p>Repository link: {props.repoLink}</p>
             </section>
         </div>
     </div>

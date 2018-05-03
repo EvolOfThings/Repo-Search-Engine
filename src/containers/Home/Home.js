@@ -9,40 +9,47 @@ import axios from 'axios';
 
 class Home extends Component {
     state = {
-        username: '',
+        user: '',
+        picture: [],
         repo: ''
     }
 
-getUser = (username) => {
-    axios.get('https://api.github.com/users/' + username)
-    .then(response => {
-        console.log(response);
-        return response;
-    });
+getUser = (username) => { 
+    const url = 'https://api.github.com/users/';
+    axios.get(url + username)
+    .then((response) => console.log(response.data))
+    .then(data => this.setState({
+        user: data.login,
+        picture: data.avatar_url,
+        repo: data.repos_url
+    }));
 }
 
 updateInputValue = (eve) => {
     console.log(eve.target.value);
     let inputUsername = eve.target.value;
     this.getUser(inputUsername);
-
-    this.setState({
-        username: eve.target.value
-    });
 }
 
     render() {
-        const { user } = this.state;
+       
         return (
                 <div>
                     <label> Username : </label>
-                    <input className={classes.Input} type='text' value={this.state.username} onChange={this.updateInputValue}/>
+                    <input className={classes.Input} type='text'  onChange={this.updateInputValue}/>
                     {/* <p style={{textAlign:'center',margin:'auto'}}>or</p>
                     <label>Repository :</label>
                     <input className={classes.Input} type='text' onChange={(event) => this.setState({username: event.target.value})}/> */}
                     {/* <button>Search</button> */}
-                    <Profile />
-                    <Repo />
+                    <Profile 
+                        profileImage={this.state.picture}
+                        repoLink ={this.state.repo} />
+                    <Repo 
+                        profileImage={this.state.picture}
+                        username={this.state.user}
+                        repoLink ={this.state.repo}/>
+                        {this.state.picture}
+                        {this.state.repo}
                     {/* <Modal /> */}
                     {/* <Backdrop /> */}
                 </div>
