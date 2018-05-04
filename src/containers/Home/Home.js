@@ -9,30 +9,32 @@ import axios from 'axios';
 
 class Home extends Component {
     state = {
-        user: '',
+        username: '',
         picture: [],
         repo: ''
     }
 
 getUser = (username) => { 
     const url = 'https://api.github.com/users/';
-    axios.get(url + username)
-    .then((response) => console.log(response.data))
-    .then(data => this.setState({
-        user: data.login,
-        picture: data.avatar_url,
-        repo: data.repos_url
-    }));
+   return axios.get(url + username)
+    .then((response) => response.data)
+    .then(user => {
+        this.setState({
+            username: user.login, 
+            picture: user.avatar_url, 
+            repo: user.repos_url });
+    });
 }
 
 updateInputValue = (eve) => {
     console.log(eve.target.value);
     let inputUsername = eve.target.value;
     this.getUser(inputUsername);
+    
 }
 
     render() {
-       
+       let user;
         return (
                 <div>
                     <label> Username : </label>
@@ -46,7 +48,7 @@ updateInputValue = (eve) => {
                         repoLink ={this.state.repo} />
                     <Repo 
                         profileImage={this.state.picture}
-                        username={this.state.user}
+                        username={this.state.username}
                         repoLink ={this.state.repo}/>
                         {this.state.picture}
                         {this.state.repo}

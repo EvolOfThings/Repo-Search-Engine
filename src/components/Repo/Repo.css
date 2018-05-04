@@ -1,14 +1,14 @@
 .Profile {
-    width: 80%;
-    margin: 16px auto;
-    border: 1px solid #6D6D6D;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    box-shadow: 0 2px 3px #717171;
-    padding: 10px;
-  }
-  
-  .ProfileImage {
-    border: 1px solid #6D6D6D;
-  }
+  width: 80%;
+  margin: 16px auto;
+  border: 1px solid #6D6D6D;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  box-shadow: 0 2px 3px #717171;
+  padding: 10px;
+}
+
+.ProfileImage {
+  border: 1px solid #6D6D6D;
+}
