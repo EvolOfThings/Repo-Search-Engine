@@ -6,7 +6,17 @@ const profile = (props) => (
         <div>
             <h4 style={{textAlign: 'center'}}>User Profile</h4>
             <div className={classes.Profile}>
-                <img className={classes.ProfileImage} src={props.profileImage} alt="user profile image"/>
+                <div>
+                    <img className={classes.ProfileImage} src={props.profileImage} alt="user profile image"/>
+                    <p>Name</p>
+                    <div>
+                        <ul className={classes.UserDetails}>
+                            <li>followers</li>
+                            <li>following</li>
+                            <li>location</li>
+                        </ul>
+                    </div>
+                </div>
                 <section>
                     <p>Repos</p>
                     <ul>

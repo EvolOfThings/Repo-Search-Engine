@@ -11,4 +11,14 @@
 
 .ProfileImage {
   border: 1px solid #6D6D6D;
+
+}
+
+.UserDetails li{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  display: inline;
+  float: left;
 }
