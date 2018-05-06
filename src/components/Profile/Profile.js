@@ -8,22 +8,17 @@ const profile = (props) => (
             <div className={classes.Profile}>
                 <div>
                     <img className={classes.ProfileImage} src={props.profileImage} alt="user profile image"/>
-                    <p>Name</p>
+                    <p>Name: {props.name}</p>
                     <div>
                         <ul className={classes.UserDetails}>
-                            <li>followers</li>
-                            <li>following</li>
-                            <li>location</li>
+                            <li>followers: {props.followers}</li>
+                            <li>following: {props.following}</li>
+                            <li>location: {props.location}</li>
                         </ul>
                     </div>
                 </div>
                 <section>
-                    <p>Repos</p>
-                    <ul>
-                        <li>repo 1</li>
-                        <li>repo 2</li>
-                        <li>repo 3</li>
-                    </ul>
+                    <p>Repos: <a href={props.repoLink}>link </a></p>
                 </section>
             </div>
         </div>

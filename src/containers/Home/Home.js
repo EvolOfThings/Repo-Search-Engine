@@ -11,7 +11,10 @@ class Home extends Component {
     state = {
         username: '',
         picture: [],
-        repo: ''
+        repo: '',
+        followers: '',
+        following: '',
+        location: ''
     }
 
 getUser = (username) => { 
@@ -22,7 +25,10 @@ getUser = (username) => {
         this.setState({
             username: user.login, 
             picture: user.avatar_url, 
-            repo: user.repos_url });
+            repo: user.repos_url,
+            followers: user.followers,
+            following: user.following,
+            location: user.location });
     });
 }
 
@@ -45,7 +51,11 @@ updateInputValue = (eve) => {
                     {/* <button>Search</button> */}
                     <Profile 
                         profileImage={this.state.picture}
-                        repoLink ={this.state.repo} />
+                        repoLink ={this.state.repo}
+                        name ={this.state.username}
+                        followers ={this.state.followers}
+                        following={this.state.following}
+                        location= {this.state.location} />
                     <Repo 
                         profileImage={this.state.picture}
                         username={this.state.username}
