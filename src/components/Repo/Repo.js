@@ -11,6 +11,7 @@ const repo = (props) => (
             <section>
             <p>Username: {props.username} </p>
             <p>Repository: <a href={props.repoLink}>repo name</a></p>
+            <p>Issues: <a href='#'>Issues</a></p>
             </section>
         </div>
     </div>
