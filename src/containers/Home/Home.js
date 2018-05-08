@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import Profile from '../../components/Profile/Profile';
-import Repo from '../../components/Repo/Repo';
+import RepoSearch from '../../components/Repo/Repo';
 import Modal from '../Modal/Modal';
 import Backdrop from '../../components/UI/Backdrop/Backdrop'
 import classes from './Home.css';
@@ -56,12 +56,11 @@ updateInputValue = (eve) => {
                         followers ={this.state.followers}
                         following={this.state.following}
                         location= {this.state.location} />
-                    <Repo 
+                    {/* <RepoSearch 
                         profileImage={this.state.picture}
                         username={this.state.username}
-                        repoLink ={this.state.repo}/>
-                        {this.state.picture}
-                        {this.state.repo}
+                        repoLink ={this.state.repo}/> */}
+
                     {/* <Modal /> */}
                     {/* <Backdrop /> */}
                 </div>

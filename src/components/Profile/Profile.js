@@ -7,8 +7,8 @@ const profile = (props) => (
             <h4 style={{textAlign: 'center'}}>User Profile</h4>
             <div className={classes.Profile}>
                 <div>
-                    <img className={classes.ProfileImage} src={props.profileImage} alt="user profile image"/>
                     <p>Name: {props.name}</p>
+                    <img className={classes.ProfileImage} src={props.profileImage} alt="user profile image"/>
                     <div>
                         <ul className={classes.UserDetails}>
                             <li>followers: {props.followers}</li>
