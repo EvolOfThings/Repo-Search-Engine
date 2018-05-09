@@ -1,6 +1,7 @@
 import React from 'react';
 // import {Grid, Row, Col, Image} from 'react-bootstrap';
 import classes from './Profile.css';
+import Repos from '../../containers/Repos/Repos'
 
 const profile = (props) => (
         <div>
@@ -17,9 +18,7 @@ const profile = (props) => (
                         </ul>
                     </div>
                 </div>
-                <section>
-                    <p>Repos: <a href={props.repoLink}>link </a></p>
-                </section>
+                <Repos />
             </div>
         </div>
     );
