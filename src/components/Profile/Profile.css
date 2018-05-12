@@ -10,8 +10,10 @@
 }
 
 .ProfileImage {
-  border: 1px solid #6D6D6D;
-
+  border: 3px solid #6D6D6D;
+  height: 60%;
+  width: 30%;
+  border-radius: 10%;
 }
 
 .UserDetails li{

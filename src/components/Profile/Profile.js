@@ -9,7 +9,7 @@ const profile = (props) => (
             <div className={classes.Profile}>
                 <div>
                     <p>Name: {props.name}</p>
-                    <img className={classes.ProfileImage} src={props.profileImage} alt="user profile image"/>
+                    <img className={classes.ProfileImage} src={props.profileImage} alt="user image"/>
                     <div>
                         <ul className={classes.UserDetails}>
                             <li>followers: {props.followers}</li>
@@ -18,7 +18,7 @@ const profile = (props) => (
                         </ul>
                     </div>
                 </div>
-                <Repos />
+                <Repos url={props.url}/>
             </div>
         </div>
     );

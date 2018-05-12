@@ -17,7 +17,6 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <h2 className={classes.AppTitle}>Github Repo Finder</h2> 
-          <p>Prajj. You've got this! The job is yours!!</p>
           <Home />
           <footer className={classes.Footer}>This app was built for <a style={{color: '#ff3b30', textDecorationLine:'none'}} href="https://aircto.com/">aircto</a></footer>
         </div>
