@@ -18,6 +18,7 @@ class App extends Component {
         <div>
           <h2 className={classes.AppTitle}>Github Repo Finder</h2> 
           <Home />
+          <p>Keeping up with the streak</p>
           <footer className={classes.Footer}>This app was built for <a style={{color: '#ff3b30', textDecorationLine:'none'}} href="https://aircto.com/">aircto</a></footer>
         </div>
       </BrowserRouter>
