@@ -19,7 +19,9 @@ class App extends Component {
           <h2 className={classes.AppTitle}>Github Repo Finder</h2> 
           <Home />
           
-          <footer className={classes.Footer}>This app was built for <a style={{color: '#ff3b30', textDecorationLine:'none'}} href="https://aircto.com/">aircto</a> by <a href="https://rishad.me/">Rishad Yamnoor</a></footer>
+          <footer 
+            className={classes.Footer}>This app was built for <a style={{color: '#ff3b30', textDecorationLine:'none'}} href="https://aircto.com/">aircto </a> by <a style={{color: 'rgb(94, 208, 86)', textDecorationLine:'none'}} href="https://rishad.me/">Rishad Yamnoor</a> 
+          </footer>
         </div>
       </BrowserRouter>
       // <Spinner />

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import Profile from '../../components/Profile/Profile';
-import RepoSearch from '../../components/Repo/Repo';
+import RepoSearch from '../../components/RepoSearch/RepoSearch';
 import Modal from '../Modal/Modal';
 import Backdrop from '../../components/UI/Backdrop/Backdrop'
 import classes from './Home.css';
@@ -43,7 +43,7 @@ updateInputValue = (eve) => {
        let user;
         return (
                 <div>
-                    <label> Username : </label>
+                    <label> Find code, projects, and people on GitHub: </label>
                     <input className={classes.Input} type='text'  onChange={this.updateInputValue}/>
                     {/* <p style={{textAlign:'center',margin:'auto'}}>or</p>
                     <label>Repository :</label>
