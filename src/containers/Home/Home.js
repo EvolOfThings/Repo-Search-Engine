@@ -43,7 +43,7 @@ updateInputValue = (eve) => {
        let user;
         return (
                 <div>
-                    <label> Find code, projects, and people on GitHub: </label>
+                    <label>Username :</label>
                     <input className={classes.Input} type='text'  onChange={this.updateInputValue}/>
                     {/* <p style={{textAlign:'center',margin:'auto'}}>or</p>
                     <label>Repository :</label>

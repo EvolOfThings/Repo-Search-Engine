@@ -16,7 +16,8 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div>
-          <h2 className={classes.AppTitle}>Github Repo Finder</h2> 
+          <h2 className={classes.AppTitle}>Github Repo Finder</h2>
+          <h5 className={classes.SubTitle}> Find code, projects, and people on GitHub </h5> 
           <Home />
           
           <footer 
