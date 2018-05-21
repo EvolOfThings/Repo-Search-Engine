@@ -2,17 +2,24 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.ClearFix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .AppTitle {
   text-align: center;
   background-color: #222;
   padding: 15px;
-  color: rgba(255, 255, 255, 0.678);
+  color: rgba(255, 255, 255, 0.34);
+  margin-bottom: 0;
 }
 
 .SubTitle {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.678) ;
+  background-color: rgb(194, 194, 194);
+  padding: 10px;
   color: #222;
 }
 
