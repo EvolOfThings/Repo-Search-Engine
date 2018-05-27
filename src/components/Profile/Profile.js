@@ -11,11 +11,11 @@ const profile = (props) => (
                     <p>Name: {props.name}</p>
                     <img className={classes.ProfileImage} src={props.profileImage} alt="user image"/>
                     <div>
-                        <ul className={classes.UserDetails}>
+                        {/* <ul className={classes.UserDetails}>
                             <li>followers: {props.followers}</li>
                             <li>following: {props.following}</li>
                             <li>location: {props.location}</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <Repos url={props.url}/>
