@@ -11,8 +11,8 @@
 
 .ProfileImage {
   border: 3px solid #6D6D6D;
-  height: 60%;
-  width: 30%;
+  height: 128px;
+  width: 128px;
   border-radius: 10%;
 }
 
