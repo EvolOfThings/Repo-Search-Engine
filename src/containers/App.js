@@ -17,7 +17,7 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <div className={classes.ClearFix}>
-            <h2 className={classes.AppTitle}>Github Repo Finder</h2>
+            <h2 className={classes.AppTitle}>Search Github</h2>
             <h5 className={classes.SubTitle}> Find code, projects, and people on GitHub </h5> 
           </div>
           <Home />
