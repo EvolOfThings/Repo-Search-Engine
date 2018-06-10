@@ -5,7 +5,7 @@ import Repos from '../../containers/Repos/Repos'
 
 const profile = (props) => (
         <div>
-            <h4 style={{textAlign: 'center'}}>Profile</h4>
+            <h4 style={{textAlign: 'center'}}>User Profile</h4>
             <div className={classes.Profile}>
                 <div>
                     <p>Name: {props.name}</p>
