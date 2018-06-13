@@ -21,8 +21,6 @@ class Repos extends Component {
     render () {
         return (
             <Fragment>
-            <ul>
-                </ul>
             </Fragment>
         );
     }

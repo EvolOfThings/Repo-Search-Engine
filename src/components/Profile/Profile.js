@@ -10,7 +10,6 @@ const profile = (props) => (
                 <div>
                     <p>Name: {props.name}</p>
                     <img className={classes.ProfileImage} src={props.profileImage} alt="user image"/>
-                    <p>Repository: {props.repoLink}</p>
                     <div>
                         <ul className={classes.UserDetails}>
                             <li>followers: {props.followers}</li>
@@ -18,8 +17,9 @@ const profile = (props) => (
                             <li>location: {props.location}</li>
                         </ul>
                     </div>
+                    <p>Repository: {props.repoLink}</p>
                 </div>
-                <Repos url={props.url}/>
+                {/* <Repos url={props.url}/> */}
             </div>
         </div>
     );
