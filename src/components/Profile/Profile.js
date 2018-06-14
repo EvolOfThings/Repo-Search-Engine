@@ -17,7 +17,7 @@ const profile = (props) => (
                             <li>location: {props.location}</li>
                         </ul>
                     </div>
-                    <p>Repository: {props.repoLink}</p>
+                    <p className={classes.RepositoryLink}>Repository: {props.repoLink}</p>
                 </div>
                 {/* <Repos url={props.url}/> */}
             </div>

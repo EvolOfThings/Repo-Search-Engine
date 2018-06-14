@@ -25,3 +25,7 @@
   display: inline;
   float: left;
 }
+
+.RepositoryLink {
+  padding: 5px;
+}
