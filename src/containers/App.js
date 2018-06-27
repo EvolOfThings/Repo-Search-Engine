@@ -23,7 +23,6 @@ class App extends Component {
           <Home />
           
           <footer className={classes.Footer}>
-          <p>It's time</p>
             This app was built for <a style={{color: '#ff3b30', textDecorationLine:'none'}} href="https://aircto.com/">aircto </a> by <a style={{textDecorationLine:'none'}} href="https://rishad.me/">Rishad Yamnoor</a> 
           </footer>
         </div>
